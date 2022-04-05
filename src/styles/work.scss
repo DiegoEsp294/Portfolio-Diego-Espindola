@@ -1,0 +1,37 @@
+.work-wrapper {
+  width: 80vw;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 3rem;
+    line-height: 50px;
+    color:rgb(61, 223, 61);
+    text-shadow: 1px 1px 0 rgb(27, 29, 27);
+  }
+  .grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    @include media(">=phone", "<lgphone") {
+      grid-template-columns: 1fr;
+    }
+    @include media(">=lgphone", "<tablet") {
+      grid-template-columns: 1fr;
+    }
+    @include media(">=tablet", "<desktop") {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.headerTagline{
+  color:rgb(77, 201, 77);
+  text-shadow: 1px 1px 0 rgb(231, 224, 224),
+}
+
+.description{
+  color:black
+}

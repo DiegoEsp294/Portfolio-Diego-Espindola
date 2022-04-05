@@ -1,0 +1,64 @@
+.about-section {
+  width: 65vw;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+  @include media(">=phone", "<lgphone") {
+    flex-direction: column-reverse;
+  }
+  @include media(">=lgphone", "<tablet") {
+    flex-direction: column-reverse;
+  }
+  @include media(">=tablet", "<desktop") {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .content {
+    width: 45%;
+    @include media(">=phone", "<lgphone") {
+      width: 100%;
+    }
+    @include media(">=lgphone", "<tablet") {
+      width: 100%;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 3rem;
+      line-height: 50px;
+      color:rgb(61, 223, 61);
+      text-shadow: 1px 1px 0 rgb(27, 29, 27);
+      @include media(">=tablet", "<desktop") {
+        text-align: center;
+      }
+    }
+    p {
+      @include media(">=tablet", "<desktop") {
+        text-align: center;
+      }
+    }
+  }
+  .image-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    @include media(">=phone", "<lgphone") {
+      width: 100%;
+    }
+    @include media(">=lgphone", "<tablet") {
+      width: 100%;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+    }
+  }
+}
+
+.headerTagline{
+  color:rgb(77, 201, 77);
+  text-shadow: 1px 1px 0 rgb(231, 224, 224),
+}
